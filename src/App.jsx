@@ -1,7 +1,6 @@
 import DogFinder from './components/DogFinder'
 import JokeGenerator from './components/JokeGenerator'
 import UserProfile from './components/UserProfile'
-import DataViewer from './components/DataViewer'
 
 /**
  * App — root component that renders the page header,
@@ -13,7 +12,7 @@ function App() {
             {/* ── Page Header ──────────────────────────────── */}
             <header className="app-header">
                 <h1>🚀 Public API Playground</h1>
-                <p>Explore free public APIs — dogs, jokes, random users, and mock data — all in one place.</p>
+                <p>Explore free public APIs — dogs, jokes, and random users — all in one place.</p>
             </header>
 
             {/* ── Cards Grid ───────────────────────────────── */}
@@ -21,12 +20,11 @@ function App() {
                 <DogFinder />
                 <JokeGenerator />
                 <UserProfile />
-                <DataViewer />
             </main>
 
             {/* ── Footer ───────────────────────────────────── */}
             <footer className="app-footer">
-                <p>Built with React · APIs: dog.ceo · official-joke-api · randomuser.me · jsonplaceholder</p>
+                <p>Built with React · Public APIs: dog.ceo · official-joke-api · randomuser.me</p>
             </footer>
         </div>
     )
